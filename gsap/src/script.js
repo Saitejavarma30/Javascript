@@ -1,6 +1,7 @@
 import "./style.css";
 import * as THREE from "three";
 
+
 //Scene
 const scene = new THREE.Scene();
 
@@ -57,7 +58,7 @@ const aspect = {
   width: window.innerWidth,
   height: window.innerHeight,
 };
-const camera = new THREE.PerspectiveCamera(75, aspect.width / aspect.height);
+const camera = new THREE.OrthographicCamera(-3, 3, 3, -3,1,1000);
 camera.position.z = 2.5;
 
 scene.add(camera);
@@ -66,6 +67,8 @@ scene.add(camera);
 const canvas = document.querySelector(".draw");
 const renderer = new THREE.WebGLRenderer({ canvas });
 renderer.setSize(aspect.width, aspect.height);
+
+
 
 //Clock Class
 const clock = new THREE.Clock();
