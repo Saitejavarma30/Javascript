@@ -1,4 +1,9 @@
 # Javascript
 
 Javascript, animations and three js
-sjfbsjbhjfbdsjhsfvbsb
+
+Learning javascript basics
+
+Learing Three Js Basics using a cube built
+
+Learning Thrre Js animations on the cube
